@@ -2,12 +2,9 @@
 CXX = g++
 CXXFLAGS = -Ilibs -Wall -std=c++17
 
-# Sources and target
-SRC = serial_canny.cpp libs/png_read_write.cpp
-TARGET = serial_canny.exe
 
 # Build rule
-all: serial_canny.exe mpi_canny.exe 
+all: serial_canny mpi_canny
 
 serial_canny: serial_canny.cpp libs/png_read_write.cpp
 	g++ -Ilibs -Wall -std=c++17 serial_canny.cpp libs/png_read_write.cpp -o serial_canny.exe
