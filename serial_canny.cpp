@@ -177,7 +177,7 @@ void edgeTrackingByHysteresis(vector<vector<int>>& edge, int width, int height, 
 
 int main() {
     string filename = "input/lamp.png";
-    string output_filename = "output/lamp.png";
+    string output_filename = "output/lamp_serial.png";
     vector<vector<int>> image, blurredImage, gradX, gradY, magnitude, direction, suppressed, edge;
     int width, height;
 
