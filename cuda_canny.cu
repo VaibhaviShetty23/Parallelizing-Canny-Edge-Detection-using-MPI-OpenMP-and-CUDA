@@ -206,8 +206,8 @@ dim3 getGridDim(int width, int height, dim3 blockDim) {
 // Main host function.
 int main() {
     // Input/Output filenames (adjust as needed)
-    string input_filename = "input/lamp.png";
-    string output_filename = "output/lamp_cuda.png";
+    string input_filename = "input/emoji.png";
+    string output_filename = "output/emoji.png";
     
     // Read image from file using your PNG functions.
     vector<vector<int>> image = read_png(input_filename);
