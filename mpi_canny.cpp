@@ -326,7 +326,7 @@ int main(int argc, char** argv) {
     MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
 
     string filename = "input/emoji.png";
-    string output_filename = "output/emoji.png";
+    string output_filename = "output/emoji_mpi.png";
     vector<vector<int>> image, blurredImage, gradX, gradY, magnitude, direction, suppressed, edge;
     int width, height;
 

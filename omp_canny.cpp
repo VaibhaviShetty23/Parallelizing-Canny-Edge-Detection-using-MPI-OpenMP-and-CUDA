@@ -183,7 +183,7 @@ void edgeTrackingByHysteresis(vector<vector<int>>& edge, int width, int height, 
 
 int main() {
     string filename = "input/emoji.png";
-    string output_filename = "output/emoji.png";
+    string output_filename = "output/emoji_omp.png";
     vector<vector<int>> image, blurredImage, gradX, gradY, magnitude, direction, suppressed, edge;
     int width, height;
 
