@@ -6,7 +6,7 @@
 
 # Parallelizing-Canny-Edge-Detection
 
-This project implements the Canny Edge Detection algorithm using three parallel programming models: MPI, OpenMP, and CUDA. The serial version of the algorithm was first developed step-by-step, including Gaussian smoothing, gradient calculation, non-maximum suppression, double thresholding, and edge tracking by hysteresis. Each stage was carefully analyzed to identify pixel-level data parallelism that could be exploited to enhance computational performance.
+This project implements the Canny Edge Detection algorithm using three parallel programming models: **MPI, OpenMP, and CUDA**. The serial version of the algorithm was first developed step-by-step, including Gaussian smoothing, gradient calculation, non-maximum suppression, double thresholding, and edge tracking by hysteresis. Each stage was carefully analyzed to identify pixel-level data parallelism that could be exploited to enhance computational performance.
 
 The parallel implementations use different strategies tailored to the architecture: MPI distributes pixels across multiple processes for execution in a distributed memory environment, OpenMP applies multithreaded parallelism on a shared-memory multicore CPU, and CUDA accelerates processing by mapping pixels to thousands of GPU threads. Results demonstrate significant performance improvements across all methods, with CUDA delivering the highest speedup, particularly for large-scale images.
 
